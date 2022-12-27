@@ -3,12 +3,8 @@ import {
 	mkdirSync,
 	existsSync,
 	writeFileSync,
-	appendFileSync,
-	lstatSync
+	appendFileSync
 } from "fs"
-import rimraf from "rimraf"
-import kill from "kill-port"
-import killPort from "kill-port"
 
 // ? Not working
 const blacklists = ["bunrest", "colston", "fastify"]
