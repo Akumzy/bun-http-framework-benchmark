@@ -13,6 +13,7 @@ Library/framework:
 -   express
 -   express-node
 -   fastify-node
+-   hapi-node
 -   hono
 -   hyperbun
 -   koa-node
@@ -56,14 +57,13 @@ Dump result will be available at `results/[benchmark-name].txt`
 
 This benchmark is tested under the following condition:
 
--   Windows 11 under WSL Debian
--   AMD Ryzen 5 3500X, DDR4 RAM 16GB 2667MHz
--   Windows 11 22H2 build 22621.963
--   Debian GNU/Linux 11 (Bullseye), kernel: 5.15.79.1-microsoft-standard-WSL2
+-   MacBook Pro
+-   Apple M1 Pro, RAM 16GB
+-   macOS Version 13.1 (22C65)
 -   Bun 0.4.0
 -   Node 18.12.1
 
-Tested on 25 Dec 1:31 (GMT+7)
+Tested on 27 Dec 14:21 (GMT+1)
 
 ## Results
 
@@ -73,21 +73,22 @@ These results are measured in req/s:
 
 | Framework    | Get (/)    | Params, query & header | Post JSON  |
 | ------------ | ---------- | ---------------------- | ---------- |
-| bagel        | 52,480.14  | 38,559.33              | 40,839.07  |
-| baojs        | 94,425.75  | 81,870.93              | 79,090.07  |
-| buchta       | 108,359.82 | 81,744.09              | 83,432.06  |
-| bun          | 143,179.64 | 106,306.16             | 102,027.23 |
-| bun-bakery   | 121,099.15 | 90,149.68              | 73,999.25  |
-| elysia       | 158,842.77 | 118,570.52             | 122,342.47 |
-| express      | 8,313.09   | 8,177.43               | 7,765.92   |
-| express-node | 6,350.76   | 6,051.1                | 5,812.16   |
-| fastify-node | 24,448.88  | 19,125.56              | 10,136.47  |
-| hono         | 166,430.02 | 95,942.99              | 97,052.24  |
-| hyperbun     | 115,502.26 | 82,832.1               | 64,588.61  |
-| koa-node     | 11,233.31  | 10,525.02              | 9,428.71   |
-| nbit         | 90,452.17  | 75,916.21              | 62,592.92  |
-| nest-node    | 19,216.1   | 5,794.28               | 5,325.94   |
-| zarf         | 63,663.53  | 54,291.81              | 54,307.66  |
+| bagel        | 59,556.57  | 43,316.68              | 47,077.89  |
+| baojs        | 81,533.1   | 74,087.02              | 73,336.95  |
+| buchta       | 102,672.99 | 87,997.54              | 70,711.26  |
+| bun          | 129,743.5  | 106,216.81             | 84,521.52  |
+| bun-bakery   | 103,740.19 | 81,701.17              | 73,586.78  |
+| elysia       | 136,188.37 | 123,245.22             | 121,139.75 |
+| express      | 22,543.9   | 22,188.23              | 21,040.99  |
+| express-node | 16,739.6   | 15,907.42              | 15,345.18  |
+| fastify-node | 57,746.68  | 53,615.48              | 28,862.46  |
+| hapi-node    | 55,375.68  | 53,211.08              | 29,043.33  |
+| hono         | 55,019.8   | 51,971.88              | 28,659.93  |
+| hyperbun     | 55,895.1   | 53,026.57              | 28,895.04  |
+| koa-node     | 55,301.7   | 52,432.67              | 28,788.16  |
+| nbit         | 54,538.64  | 53,354.18              | 28,518.2   |
+| nest-node    | 56,491.68  | 51,938.78              | 29,225.19  |
+| zarf         | 54,298.25  | 53,421.6               | 29,372.14  |
 
 ## Notice
 
